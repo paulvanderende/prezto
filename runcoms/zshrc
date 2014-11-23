@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias java6="export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)"
+alias java7="export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)"
+# alias java8="export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)"
+
+java7
+

@@ -9,3 +9,8 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export GRADLE_OPTS="-Xms512m -Xmx3G -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=512M"
+export SBT_OPTS="-Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=256m"
+export CATALOG=/Users/pvanderende/xl/Catalog
+export DOCKER_HOST=tcp://192.168.59.103:2375
